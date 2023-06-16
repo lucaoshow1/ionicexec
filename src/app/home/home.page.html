@@ -1,0 +1,30 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar color="danger">
+    <ion-title class="ion-text-center">
+      Aula Ionic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <strong>Alô mundo</strong>
+    <p>Nome: {{ nome }}, {{sobreNome}}</p>
+    <p>Idade: {{ idade }}, peso: {{ peso }} </p>
+    Soma de 5 + 5 = {{ 5+5 }}
+    <br>
+    <ion-button (click)="testaFuncao()">Clique Aqui</ion-button>
+    <br>
+    <ion-button (click ="calcular()")>Cálculos</ion-button>
+  </div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar color ="sucess">
+    <ion-title>
+      Senac Nig
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
